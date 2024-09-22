@@ -29,11 +29,11 @@ spec:
             - name: PROVISIONER_NAME
               value: cnlxh/nfs-storage
             - name: NFS_SERVER
-              value: 192.168.30.130
+              value: 192.168.8.3
             - name: NFS_PATH
               value: /nfsshare
       volumes:
         - name: nfs-client-root
           nfs:
-            server: 192.168.30.130
+            server: 192.168.8.3
             path: /nfsshare
